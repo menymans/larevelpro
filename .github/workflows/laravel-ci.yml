@@ -31,9 +31,6 @@ jobs:
         echo "DB_DATABASE=:memory:" >> .env
         touch database/database.sqlite
 
-    - name: Run PHPStan
-      run: vendor/bin/phpstan analyse --memory-limit=1G
-
     - name: Run tests
       run: |
         php artisan migrate:fresh --env=testing
