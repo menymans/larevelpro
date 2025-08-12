@@ -1,0 +1,406 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    margin-bottom: 40px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.poster {
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-delete:hover {
+    background-color: darkred;
+}
+.btn-update {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-update:hover {
+    background-color: darkblue;
+}
+
+/* home.css */
+.categories-panel {
+    margin-bottom: 20px;
+}
+
+.categories-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.categories-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-panel ul li {
+    margin-bottom: 5px;
+}
+
+.categories-panel ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.categories-panel ul li a:hover {
+    text-decoration: underline;
+}
+
+/* home.css */
+
+/* Estilos para el menú lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-left: 220px; /* Espacio para el menú lateral */
+    padding: 20px;
+}
+
+.categories-panel {
+    margin-bottom: 20px;
+}
+
+.categories-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.categories-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-panel ul li {
+    margin-bottom: 5px;
+}
+
+.categories-panel ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.categories-panel ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Otros estilos para el formulario y la lista de películas */
+.form-container,
+.movies {
+    margin-bottom: 20px;
+}
+
+/* home.css */
+
+/* Estilos para el menú lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-left: 220px; /* Espacio para el menú lateral */
+    padding: 20px;
+}
+
+.quick-links {
+    margin-bottom: 20px;
+}
+
+.quick-links h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.link:hover {
+    background-color: #e0e0e0;
+}
+
+.link h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.link p {
+    font-size: 1em;
+}
+
+/* Estilos para actualizaciones */
+.updates {
+    margin-top: 20px;
+}
+
+.updates h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* public/css/home.css */
+
+.cover {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.novels .novel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.novels .novel:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-detail {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-detail .poster {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
